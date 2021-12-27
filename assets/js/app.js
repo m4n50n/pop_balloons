@@ -17,7 +17,7 @@ const render_balloons = () => {
     remaining_balloons_container.innerHTML = count_balloons;
 
     if (count_balloons === 0) {
-        game_wrapper.innerHTML = "<h1>YOU WIN! 🔥</h1>";
+        game_wrapper.innerHTML = "<h1>YOU WIN! 🔥</h1> <button type='button' class='btn btn-primary btn-sm' onclick='location.reload();'>PLAY AGAIN!</button>";
     } 
 }
 
