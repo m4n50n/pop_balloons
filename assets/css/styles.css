@@ -1,0 +1,43 @@
+/* - GENERAL - */
+.container-fluid {
+  min-height: 100vh;
+}
+
+/* -- GAME CONTAINER -- */
+#game-wrapper {
+  width: calc((70px * 4) + (1rem * 4)); /* (balloon width * 4 elements in each row) + (row gap * 4 elements elements in each row) */
+}
+
+.balloon {
+  width: 70px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: inset -10px -10px 0 #1414141c;
+  cursor: pointer;
+  animation: balloons 4s ease-in-out infinite;
+}
+
+.balloon::after {
+  content: "▲";
+  position: absolute;
+  bottom: -11px;
+  left: 28px;
+  font-size: 12px;
+  color: inherit;  
+}
+
+.balloon.popped {
+  visibility: hidden;
+}
+
+/* -- ANIMATIONS -- */
+/**
+ * Source
+ * https://developer.mozilla.org/es/docs/Web/CSS/transform-function/rotate()
+ * https://www.the-art-of-web.com/css/css-animation/ 
+ * https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+*/
+@keyframes balloons {
+    0%,100% { transform:translateY(0) rotate(-4deg); }
+    50% { transform:translateY(-25px) rotate(4deg); }
+}

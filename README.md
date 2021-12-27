@@ -20,10 +20,8 @@ pip3 install flask && python3 server.py
 
 ## Instructions 📄
 
-* When the website loads (**window.onload**) you have to render all the balloons.
-* Every balloon needs to have an onClick attached to listen to when the user clicks on it.
+* When the website loads, the rendering of the balloons will begin.
 * When the user clicks on it the balloon disappears (pops) from the screen.
-* When all the 20 balloons have disappeared the website reloads and the game starts again.
 
 ## Direct live demo 🎬
 
