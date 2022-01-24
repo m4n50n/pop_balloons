@@ -1,5 +1,7 @@
 # ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) Pop Balloons game using Javascript, HTML/CSS
 
+![screenshot](https://raw.githubusercontent.com/m4n50n/pop_balloons/main/screenshot_preview.png)
+
 ✏ *The game goal is to POP all the balloons by clicking on them. Inspired in **./preview.gif***.
 
 ## What to do next?
